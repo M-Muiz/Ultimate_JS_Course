@@ -42,3 +42,7 @@
 
 // console.log(a)
 // console.log(b)
+
+
+// () {} [] these are reference matlab ye copy kro aur inki value kahi pr bhi change kro to reflect main value me bhi hoga
+
