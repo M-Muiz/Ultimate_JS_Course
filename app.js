@@ -96,3 +96,16 @@
 
 // let arr = [23,24,25,26];
 // console.log(arr)
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+
+console.log(arr)
+console.log(arr.push(9))
+console.log(arr)
+console.log(arr.pop(7))
+console.log(arr)
+console.log(arr.shift(2))
+console.log(arr)
+console.log(arr.unshift(0))
+console.log(arr)
