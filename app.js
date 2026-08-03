@@ -75,8 +75,20 @@
 //     i++
 // }
 
-i = 2;
-do{
-    console.log("Do Loop!")
-}
-while(i > 5)
+// i = 2;
+// do{
+//     console.log("Do Loop!")
+// }
+// while(i > 5)
+
+// function hellobolo(){
+//     console.log("Hello")
+// }
+
+// hellobolo()
+
+// function sum(num1,num2){
+//     console.log(num1 +num2)
+// }
+
+// sum(2,65)
