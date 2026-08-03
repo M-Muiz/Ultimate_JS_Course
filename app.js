@@ -21,6 +21,24 @@
 
 // var a;
 
-console.log(a)
+// console.log(a)
 
-a = 34;
+// a = 34;
+
+// var a = 12 ;
+
+// var b = a;
+
+// b = b+2;
+// console.log(b)
+// console.log(a)
+
+
+// var a = [1,2,3,4,5];
+
+// var b = a;
+
+// b.pop()
+
+// console.log(a)
+// console.log(b)
