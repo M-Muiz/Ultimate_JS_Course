@@ -2,15 +2,25 @@
 
 // console.log(something)
 
-var num1 = 5;
+// var num1 = 5;
 
-function sum(){
-    // var num1 = 4;
-    // return num1;
+// function sum(){ 
+//     var num1 = 4;
+//     return num1;
 
-    console.log(num1)
-}
+//     console.log(num1)
+// }
 
-sum();
+// sum();
 // console.log(num1)
 // console.log(sum())
+
+
+// Hoisting = using variable before declaring
+
+
+// var a;
+
+console.log(a)
+
+a = 34;
