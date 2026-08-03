@@ -46,9 +46,14 @@
 
 // () {} [] these are reference matlab ye copy kro aur inki value kahi pr bhi change kro to reflect main value me bhi hoga
 
-if(12> 13){
-    console.log("if is working")
-}
-else{
-    console.log("else working")
+// if(12> 13){
+//     console.log("if is working")
+// }
+// else{
+//     console.log("else working")
+// }
+
+
+for(var i = 0; i < 12; i++){
+    console.log(i)
 }
