@@ -74,3 +74,9 @@
 //     console.log("While Loop!");
 //     i++
 // }
+
+i = 2;
+do{
+    console.log("Do Loop!")
+}
+while(i > 5)
