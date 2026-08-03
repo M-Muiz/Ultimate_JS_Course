@@ -57,6 +57,20 @@
 // for(var i = 0; i < 12; i++){
 //     console.log(i)
 // }
-for(var i = 0; i < 12; i++){
-    console.log("For Loop!")
-}
+
+
+// for(var i = 0; i < 12; i++){
+//     console.log("For Loop!")
+// }
+
+// i = 0;
+
+// while(i<30){
+//     console.log(i);
+//     i++
+// }
+
+// while(i<30){
+//     console.log("While Loop!");
+//     i++
+// }
