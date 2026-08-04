@@ -282,3 +282,18 @@ function getGrade(score) {
 }
 
 */
+
+
+
+function rps(user, computer){
+    if(user === computer) return "Draw";
+
+    if(user === "scissor" && computer === "paper") return "User Win";
+    if(user === "paper" && computer === "rock") return "User Win";
+    if(user === "rock" && computer === "scissor") return "User Win";
+    
+    else return "Computer Win"
+
+}
+
+console.log(rps("paper", "scissor"))
