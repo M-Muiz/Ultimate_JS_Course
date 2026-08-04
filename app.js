@@ -208,3 +208,40 @@
 //     default:
 //         console.log("City not found");    
 // }
+
+// function getVal(val) {
+//     if (val <= 50) {
+//         return console.log("a");
+//     }
+//     else if (val >= 50 && val <= 100) {
+//         return console.log("b")
+//     }
+//     else {
+//         return console.log("c")
+//     }
+// }
+
+// getVal(43)
+
+// function getVal(val) {
+//     if (val < 25) return "A"
+//     else if(val < 50) return "B"
+//     else if(val < 75) return "C"
+//     else return "D"
+// }
+
+// console.log(getVal(12))
+// console.log(getVal(32))
+// console.log(getVal(52))
+// console.log(getVal(92))
+
+
+function getGrade(score) {
+    let condition = score > 0 && score < 32 ? "Fail" : score > 32 && score < 59 ? "D" : score > 59 && score < 69 ? "C" : score > 70 && score < 79 ? "B" : score > 80 && score < 89 ? "A" : score > 90 && score < 100 ? "A-One" : "Invalid Marks";
+    return condition;
+}
+console.log(getGrade(73))
+console.log(getGrade(63))
+console.log(getGrade(53))
+console.log(getGrade(35))
+console.log(getGrade(3))
