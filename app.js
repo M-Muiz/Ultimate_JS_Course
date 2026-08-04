@@ -192,3 +192,19 @@
 // else{
 //     console.log("Please LogIn!")
 // }
+
+// let city = "karachi";
+
+// switch (city){
+//     case "karachi":
+//         console.log("You live in karachi")
+//         break;
+//     case "lahore":
+//         console.log("You live in lahore")
+//         break;
+//     case "ismalabad":
+//         console.log("Your live in islamabad")
+//         break;       
+//     default:
+//         console.log("City not found");    
+// }
