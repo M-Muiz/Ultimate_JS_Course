@@ -112,11 +112,59 @@
 
 
 
-var blankobj = {};
+// var blankobj = {};
 
-var obj = {
-    age: 22,
-    name: "Making Objects"
-}
+// var obj = {
+//     age: 22,
+//     name: "Making Objects"
+// }
 
-console.log(obj)
+// console.log(obj)
+
+
+// let a = 9007199254740991n;
+// a + 12n;
+// console.log(a)
+
+
+// console.log("5" + 1)
+
+
+// {
+// var x = 5;
+// let y = 10;
+// const z = 15;
+// }
+// console.log(x); 
+// console.log(y); 
+// console.log(z);
+
+
+
+// const obj = {
+//     name : "moiz"
+// }
+// obj.city = "karachi"
+// console.log(obj)
+
+
+// const arr = [1,2,3,4,5]
+// arr.push(6)
+// console.log(arr)
+
+// console.log(typeof []);
+// console.log(typeof null);
+// console.log(typeof 123n);
+
+
+// hasId = false;
+
+// if(hasId){
+//     console.log("You have id")
+// }
+// else{
+//     console.log("You don't have id")
+// }
+
+// age = 2;
+// age > 19 ? console.log("You are men!") : console.log("You are kiddo!")
