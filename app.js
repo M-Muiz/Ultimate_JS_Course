@@ -179,3 +179,16 @@
 // console.log(true + false);
 // console.log(!!"Sheryians"); 
 
+
+// let loggedIn = 1;
+// let admin = 0;
+
+// if(loggedIn && admin){
+//     console.log("Admin Block!")
+// }
+// else if(loggedIn){
+//     console.log("LoggedIn Block!")
+// }
+// else{
+//     console.log("Please LogIn!")
+// }
