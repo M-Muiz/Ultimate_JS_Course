@@ -235,6 +235,7 @@
 // console.log(getVal(52))
 // console.log(getVal(92))
 
+/*
 
 function getGrade(score) {
     let condition = score > 0 && score < 32 ? "Fail" : score > 32 && score < 59 ? "D" : score > 59 && score < 69 ? "C" : score > 70 && score < 79 ? "B" : score > 80 && score < 89 ? "A" : score > 90 && score < 100 ? "A-One" : "Invalid Marks";
@@ -245,3 +246,39 @@ console.log(getGrade(63))
 console.log(getGrade(53))
 console.log(getGrade(35))
 console.log(getGrade(3))
+
+function getGrade(score) {
+    return score >= 0 && score <= 32 ? "Fail"
+        : score <= 59 ? "D"
+        : score <= 69 ? "C"
+        : score <= 79 ? "B"
+        : score <= 89 ? "A"
+        : score <= 100 ? "A-One"
+        : "Invalid Marks";
+}
+
+console.log(getGrade(73)); // B
+console.log(getGrade(63)); // C
+console.log(getGrade(53)); // D
+console.log(getGrade(35)); // D
+console.log(getGrade(3));  // Fail
+
+function getGrade(score) {
+    if (score < 0 || score > 100) {
+        return "Invalid Marks";
+    } else if (score <= 32) {
+        return "Fail";
+    } else if (score <= 59) {
+        return "D";
+    } else if (score <= 69) {
+        return "C";
+    } else if (score <= 79) {
+        return "B";
+    } else if (score <= 89) {
+        return "A";
+    } else {
+        return "A-One";
+    }
+}
+
+*/
