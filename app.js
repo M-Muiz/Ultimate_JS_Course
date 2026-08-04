@@ -168,3 +168,14 @@
 
 // age = 2;
 // age > 19 ? console.log("You are men!") : console.log("You are kiddo!")
+
+
+// let score = 80;
+// let grade = score > 50 ? "Pass" : "Fail";
+// console.log(grade)
+
+// console.log("10" + 1);
+// console.log("10" - 1);
+// console.log(true + false);
+// console.log(!!"Sheryians"); 
+
