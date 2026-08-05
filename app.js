@@ -330,10 +330,11 @@ function getGrade(score) {
 
 num = 6
 let factorial = 1;
-
+let factorialSum = 0;
 for (let i = num; i > 0; i--) {
     factorial *= i
+    factorialSum += factorial
 }
 
 console.log(factorial)
-
+console.log(factorialSum)
