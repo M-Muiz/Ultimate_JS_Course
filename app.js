@@ -303,3 +303,26 @@ function getGrade(score) {
 //     sum += i
 // }
 // console.log(sum)
+
+
+// for(let i =0; i < 51; i++){
+//     if(i%3 == 0){
+//      console.log(i, "Divisible by 3")
+//     }
+// }
+
+
+// user_start_no = 10;
+// user_end_no = 30;
+// isPrime = false;
+
+
+
+// for (let i = user_start_no; i <= user_end_no; i++) {
+//     for (let j = 2; j <= user_end_no; j++) {
+//         if (i % j == 0){
+//             console.log(i,"Prime Number!")
+//             break;
+//         }
+//     }
+// }
