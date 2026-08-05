@@ -291,13 +291,15 @@ function getGrade(score) {
 //     if(user === "scissor" && computer === "paper") return "User Win";
 //     if(user === "paper" && computer === "rock") return "User Win";
 //     if(user === "rock" && computer === "scissor") return "User Win";
-    
+
 //     else return "Computer Win"
 
 // }
 
 // console.log(rps("paper", "scissor"))
 
-for(let i = 0; i < 43; i++){
-    console.log(i)
-}
+// let sum = 0;
+// for (let i = 1; i < 11; i++) {
+//     sum += i
+// }
+// console.log(sum)
