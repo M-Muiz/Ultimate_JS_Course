@@ -349,3 +349,10 @@ function getGrade(score) {
 
 // abcd()()
 
+
+let a = function(val){
+   return val + val*val
+}
+
+let b = a(8)
+console.log(b)
