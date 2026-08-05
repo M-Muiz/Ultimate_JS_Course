@@ -358,8 +358,35 @@ function getGrade(score) {
 // console.log(b)
 
 
-function abd(val){
-    val()
+// function abd(val){
+//     val()
+// }
+
+// abd(function(){console.log("This is First Class Function!")})
+
+
+// function abcd(){
+//     let a = 20;
+//     return function(){
+//         console.log(a)
+//     }
+// }
+
+// abcd()()
+
+
+function counter(){
+    let count = 0;
+
+    return function(){
+        count++;
+        console.log(count);
+    }
 }
 
-abd(function(){console.log("This is First Class Function!")})
+let c = counter();
+
+c(); 
+c(); 
+c();
+c();
