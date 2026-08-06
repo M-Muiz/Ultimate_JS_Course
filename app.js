@@ -475,20 +475,38 @@ function getGrade(score) {
 
 // PRACTICING COLUSERS **********************************
 
+/*
 
-// function abcd() {
-//     let count = 0;
-//     return function () {
-//         count++;
-//         return count;
-//     }
-// }
+function abcd() {
+    let count = 0;
+    return function () {
+        count++;
+        return count;
+    }
+}
 
-// let counter = abcd();
-// let counter2 = abcd();
+let counter = abcd();
+let counter2 = abcd();
 
-// console.log(counter())
-// console.log(counter())
-// console.log(counter())
-// console.log(counter2())
-// console.log(counter())
+console.log(counter())
+console.log(counter())
+console.log(counter())
+console.log(counter2())
+console.log(counter())
+
+
+function passwordChecker(pass) {
+    let password = "august";
+    return function () {
+        if (pass === password) return "Correct Password!"
+        return "Wrong Password!"
+    }
+}
+
+let wrongPass = passwordChecker("july")
+let correctPass = passwordChecker("august")
+
+console.log(wrongPass())
+console.log(correctPass())
+
+*/
