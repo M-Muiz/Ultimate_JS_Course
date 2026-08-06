@@ -431,3 +431,7 @@ function getGrade(score) {
 // }
 
 // evenNum(arr)
+
+// (function () {
+//     console.log("Welcome")
+// })();
