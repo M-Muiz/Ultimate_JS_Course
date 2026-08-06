@@ -417,3 +417,17 @@ function getGrade(score) {
 // }
 
 // sum(2,4,3,5,6,7,23);
+
+
+// let arr= [1,2,3,5,36,6,4,7,8,9];
+
+// function evenNum (a){
+//     for(let i =0; i<a.length; i++){
+//         if(a[i]%2==0 ){
+//             console.log(a[i])
+//         }
+//         console.log("Odd Number!")
+//     }
+// }
+
+// evenNum(arr)
