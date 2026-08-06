@@ -454,12 +454,41 @@ function getGrade(score) {
 // console.log(discount(25))
 
 
-function discountCalculator(discount) {
-    return function discountedprice(price) {
-        return price - (price * discount / 100)
-    }
-}
+// function discountCalculator(discount) {
+//     return function discountedprice(price) {
+//         return price - (price * discount / 100)
+//     }
+// }
 
-let discountPercent = discountCalculator(20);
+// let discountPercent = discountCalculator(20);
 
-console.log(discountPercent(500))
+// console.log(discountPercent(500))
+
+
+// function abcd(val) {
+//     val()
+// }
+
+// abcd(function () {
+//     console.log("hey")
+// })
+
+// PRACTICING COLUSERS **********************************
+
+
+// function abcd() {
+//     let count = 0;
+//     return function () {
+//         count++;
+//         return count;
+//     }
+// }
+
+// let counter = abcd();
+// let counter2 = abcd();
+
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter2())
+// console.log(counter())
