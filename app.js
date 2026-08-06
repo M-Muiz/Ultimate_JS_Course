@@ -435,3 +435,22 @@ function getGrade(score) {
 // (function () {
 //     console.log("Welcome")
 // })();
+
+
+
+
+
+
+
+// function disCal(price){
+//     return price/5
+// }
+
+// function discount(a){
+//     let aa = disCal(a)
+//     return aa
+// }
+
+// console.log(discount(25))
+
+
