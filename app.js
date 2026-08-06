@@ -375,18 +375,28 @@ function getGrade(score) {
 // abcd()()
 
 
-function counter(){
-    let count = 0;
+// function counter(){
+//     let count = 0;
 
-    return function(){
-        count++;
-        console.log(count);
-    }
-}
+//     return function(){
+//         count++;
+//         console.log(count);
+//     }
+// }
 
-let c = counter();
+// let c = counter();
 
-c(); 
-c(); 
-c();
-c();
+// c(); 
+// c(); 
+// c();
+// c();
+
+
+// 06-08-2026
+
+
+// function abcd(...val) {
+//     console.log(val)
+// }
+
+// abcd(1, 2, 3, 4, 5, 6)
