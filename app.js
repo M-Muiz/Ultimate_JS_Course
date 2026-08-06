@@ -406,3 +406,14 @@ function getGrade(score) {
 // }
 
 // arrowFnc("Ashhad")
+
+
+// function sum(...vals) {
+//     let sum = 0;
+//     for (let i = 0; i < vals.length; i++) {
+//         sum+=vals[i];     
+//     }
+//     console.log(sum)
+// }
+
+// sum(2,4,3,5,6,7,23);
