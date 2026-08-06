@@ -454,3 +454,12 @@ function getGrade(score) {
 // console.log(discount(25))
 
 
+function discountCalculator(discount) {
+    return function discountedprice(price) {
+        return price - (price * discount / 100)
+    }
+}
+
+let discountPercent = discountCalculator(20);
+
+console.log(discountPercent(500))
