@@ -746,3 +746,18 @@ console.log(passedStudents)
 // }))
 
 */
+
+// const products = [
+//   { name: "Phone", price: 50000, inStock: true },
+//   { name: "Laptop", price: 120000, inStock: false },
+//   { name: "Mouse", price: 1500, inStock: true },
+//   { name: "Keyboard", price: 2500, inStock: true }
+// ];
+
+// const stock = products.filter(a=>{
+//     return a.inStock;
+// }).map(product=>{
+//     return product.name
+// }).sort();
+
+// console.log(stock)
