@@ -509,24 +509,49 @@ let correctPass = passwordChecker("august")
 console.log(wrongPass())
 console.log(correctPass())
 
+
 */
-
-
 
 function bankMangment(b) {
     let balance = b;
+    let history = [{
+        status: "BankBalance Before Transactions",
+        balance
+    }];
     let deposit = function (d) {
         balance += d;
+        history.push({
+            status: "Deposit",
+            remaningBalance: balance
+        });
         return `${balance} Deposited Amount!`;
     };
     let withdraw = function (w) {
         balance -= w;
+        history.push({
+            status: "Withdrawl",
+            remaningBalance: balance
+        });
         return `${balance} Withdraw Amount!`;
     };
-    return { balance, deposit, withdraw }
+    let getBalance = function () {
+        return balance;
+    }
+    function transactionHistory() {
+        return history;
+    }
+    return { getBalance, deposit, withdraw, history }
 }
 
-let account = bankMangment(899);
+let account = bankMangment(3000);
 
-console.log(account.deposit(1));
-console.log(account.withdraw(200));
+console.log(account.withdraw(500));
+console.log(account.deposit(200));
+console.log(account.getBalance());
+console.log(account.history);
+
+
+
+function greeting(name) {
+
+}
