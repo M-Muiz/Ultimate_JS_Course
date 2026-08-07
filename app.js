@@ -610,4 +610,7 @@ console.log(account.transactionHistory());
 // let newArr = arr.filter(val => {return val > 15})
 
 
-let arr = [2, 4, 5, 7, 8, 10, 12, 20];
+// const marks = [80, 90, 45, 60, 100]; 
+
+// let passStudents = marks.every(val=>{return val>50})
+//console.log(passStudents) // The output will be false becasuse one student mark is below than 50 and every check that every element of array meet should meet the given statment
