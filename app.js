@@ -619,3 +619,38 @@ console.log(account.transactionHistory());
 // const marks = [30, 40, 90, 20];
 //  let passStudents = marks.some(val=>{return val>50})
 // console.log(passStudents) Its the oppossite of every() method;
+
+// const users = [
+//   { name: "Ali", age: 20 },
+//   { name: "Ahmed", age: 17 },
+//   { name: "Sara", age: 25 }
+// ];
+
+
+// let abc= users.filter(obj =>{
+//     return obj.age>18
+// });
+
+// console.log(abc)
+
+// let abc = users.map(val=>{
+//     return val.name
+// });
+
+
+// const numbers = [10, 18, 15, 20, 25];
+
+// console.log(numbers.find(val => { return val > 18 }))
+
+
+
+// const users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Ahmed" },
+//   { id: 3, name: "Sara" }
+// ];
+
+// let abc = users.find(val=>{
+//     return val.id === 2
+// })
+// console.log(abc)
