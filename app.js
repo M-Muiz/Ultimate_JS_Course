@@ -510,7 +510,6 @@ console.log(wrongPass())
 console.log(correctPass())
 
 
-*/
 
 function bankMangment(b) {
     let balance = b;
@@ -521,7 +520,9 @@ function bankMangment(b) {
     let deposit = function (d) {
         balance += d;
         history.push({
+            balance,
             status: "Deposit",
+            depositedAmount: d,
             remaningBalance: balance
         });
         return `${balance} Deposited Amount!`;
@@ -529,7 +530,9 @@ function bankMangment(b) {
     let withdraw = function (w) {
         balance -= w;
         history.push({
+            balance,
             status: "Withdrawl",
+            withdrawalAmount: w,
             remaningBalance: balance
         });
         return `${balance} Withdraw Amount!`;
@@ -540,7 +543,7 @@ function bankMangment(b) {
     function transactionHistory() {
         return history;
     }
-    return { getBalance, deposit, withdraw, history }
+    return { getBalance, deposit, withdraw, transactionHistory }
 }
 
 let account = bankMangment(3000);
@@ -548,10 +551,14 @@ let account = bankMangment(3000);
 console.log(account.withdraw(500));
 console.log(account.deposit(200));
 console.log(account.getBalance());
-console.log(account.history);
+console.log(account.transactionHistory());
+
+*/
 
 
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-function greeting(name) {
-
-}
+let newArr = arr.forEach(function (val) {
+    console.log(val * val)
+})
+// console.log(newArr)
