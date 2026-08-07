@@ -787,3 +787,12 @@ console.log(it_salary)
 
 
 */
+
+const students = [
+  { name: "Ali", marks: 80 },
+  { name: "Ahmed", marks: 45 },
+  { name: "Sara", marks: 95 },
+  { name: "Bilal", marks: 60 },
+  { name: "Ayesha", marks: 100 }
+];
+
