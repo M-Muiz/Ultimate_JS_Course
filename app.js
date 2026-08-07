@@ -556,9 +556,18 @@ console.log(account.transactionHistory());
 */
 
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
-let newArr = arr.forEach(function (val) {
-    console.log(val * val)
-})
+// let newArr = arr.forEach(function (val) {
+//     console.log(val * val)
+// })
+// console.log(newArr)
+
+
+// let arr = [2, 6, 8, 22]
+
+// let newArr = arr.every(function (val) {
+//     return val % 2 == 0
+// })
+
 // console.log(newArr)
