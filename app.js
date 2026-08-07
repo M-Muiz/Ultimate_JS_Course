@@ -654,3 +654,39 @@ console.log(account.transactionHistory());
 //     return val.id === 2
 // })
 // console.log(abc)
+
+// const users = [
+//   { id: 1, name: "Ali" },
+//   { id: 2, name: "Ahmed" },
+//   { id: 3, name: "Sara" }
+// ];
+
+// let a = users.findIndex(val=>{
+//     return val.name === "Sara"
+// });
+
+
+// const numbers = [10, 20, 30, 40];
+
+// console.log(numbers.reduce(val => { { return val += val } }));
+
+// const numbers = [2, 3, 4];
+// console.log(numbers.reduce((a,val) => { { return a*val } }));
+
+
+// const cart = [
+//     { name: "Phone", price: 50000 },
+//     { name: "Laptop", price: 120000 },
+//     { name: "Mouse", price: 2000 }
+// ];
+
+
+// let abc = cart.map(val => {
+//     return val.price
+// })
+
+// let def = abc.reduce((a, val) => { 
+//     return val += a
+//  })
+
+// console.log(def)
