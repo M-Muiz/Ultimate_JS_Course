@@ -594,8 +594,13 @@ console.log(account.transactionHistory());
 //     return val + (val *18/100)
 // });
 
-// let fruits = ["mango", "apple","banana"];
+let fruits = ["mango", "apple","banana"];
 
 // fruits.forEach(val=>{
 //     console.log(val)
 // })
+
+
+// let newArr = fruits.map((val)=>{
+//     return val.toUpperCase()
+// });
