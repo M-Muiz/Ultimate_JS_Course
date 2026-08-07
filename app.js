@@ -571,3 +571,18 @@ console.log(account.transactionHistory());
 // })
 
 // console.log(newArr)
+
+
+// let fullName = ["Moiz", "Siddiqui"];
+
+// let [name,lastName] = fullName;
+
+// console.log(name, lastName)
+
+// -------------------------------------------------------------------------------------------
+
+// let arr = [2,4,5,7,8,10,12,20];
+
+// let newArr = arr.map(function(val){
+//     return val*val
+// });
