@@ -614,3 +614,8 @@ console.log(account.transactionHistory());
 
 // let passStudents = marks.every(val=>{return val>50})
 //console.log(passStudents) // The output will be false becasuse one student mark is below than 50 and every check that every element of array meet should meet the given statment
+
+
+// const marks = [30, 40, 90, 20];
+//  let passStudents = marks.some(val=>{return val>50})
+// console.log(passStudents) Its the oppossite of every() method;
