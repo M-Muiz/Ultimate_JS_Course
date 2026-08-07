@@ -510,3 +510,23 @@ console.log(wrongPass())
 console.log(correctPass())
 
 */
+
+
+
+function bankMangment(b) {
+    let balance = b;
+    let deposit = function (d) {
+        balance += d;
+        return `${balance} Deposited Amount!`;
+    };
+    let withdraw = function (w) {
+        balance -= w;
+        return `${balance} Withdraw Amount!`;
+    };
+    return { balance, deposit, withdraw }
+}
+
+let account = bankMangment(899);
+
+console.log(account.deposit(1));
+console.log(account.withdraw(200));
