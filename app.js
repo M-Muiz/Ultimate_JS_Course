@@ -592,4 +592,10 @@ console.log(account.transactionHistory());
 
 // let newArr = arr.map(val=>{
 //     return val + (val *18/100)
+// });
+
+// let fruits = ["mango", "apple","banana"];
+
+// fruits.forEach(val=>{
+//     console.log(val)
 // })
