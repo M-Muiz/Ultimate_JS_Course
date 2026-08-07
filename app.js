@@ -579,114 +579,170 @@ console.log(account.transactionHistory());
 
 // console.log(name, lastName)
 
-// -------------------------------------------------------------------------------------------
 
-// let arr = [2,4,5,7,8,10,12,20];
+/*
 
-// let newArr = arr.map(function(val){
-//     return val*val
-// });
+// ********************************************** AI PRACTICE QUESTIONS SECTION *************************************************************
+
+// Q1
+let arr = [2,4,5,7,8,10,12,20];
+
+let newArr = arr.map(function(val){
+    return val*val
+});
+
+// Q2
+let arr = [2,3,6];
+
+let newArr = arr.map(val=>{
+    return val + (val *18/100)
+});
+
+// Q3
+let fruits = ["mango", "apple","banana"];
+
+fruits.forEach(val=>{
+    console.log(val)
+})
+
+// Q4
+let newArr = fruits.map((val)=>{
+    return val.toUpperCase()
+});                                         
+
+// Q5
+let arr = [2, 4, 5, 7, 8, 10, 12, 20];
+let newArr = arr.filter(val => {return val > 15})
+
+// Q6
+const marks = [80, 90, 45, 60, 100]; 
+
+let passStudents = marks.every(val=>{return val>50})
+console.log(passStudents) // The output will be false becasuse one student mark is below than 50 and every check that every element of array meet should meet the given statment
+
+// Q7
+const marks = [30, 40, 90, 20];
+ let passStudents = marks.some(val=>{return val>50})
+console.log(passStudents) // Its the oppossite of every() method;
+
+// Q8
+const users = [
+  { name: "Ali", age: 20 },
+  { name: "Ahmed", age: 17 },
+  { name: "Sara", age: 25 }
+];
+
+let abc= users.filter(obj =>{
+    return obj.age>18
+});
+
+console.log(abc)
+
+// Q9
+let abc = users.map(val=>{
+    return val.name
+});
 
 
-// let arr = [2,3,6];
+// Q10
+const numbers = [10, 18, 15, 20, 25];
 
-// let newArr = arr.map(val=>{
-//     return val + (val *18/100)
-// });
-
-// let fruits = ["mango", "apple","banana"];
-
-// fruits.forEach(val=>{
-//     console.log(val)
-// })
+console.log(numbers.find(val => { return val > 18 }))
 
 
-// let newArr = fruits.map((val)=>{
-//     return val.toUpperCase()
-// });                                         
+// Q11
+const users = [
+  { id: 1, name: "Ali" },
+  { id: 2, name: "Ahmed" },
+  { id: 3, name: "Sara" }
+];
+
+let abc = users.find(val=>{
+    return val.id === 2
+})
+console.log(abc)
 
 
-// let arr = [2, 4, 5, 7, 8, 10, 12, 20];
-// let newArr = arr.filter(val => {return val > 15})
+// Q12
+const users = [
+  { id: 1, name: "Ali" },
+  { id: 2, name: "Ahmed" },
+  { id: 3, name: "Sara" }
+];
+
+let a = users.findIndex(val=>{
+    return val.name === "Sara"
+});
+
+// Q13
+const numbers = [10, 20, 30, 40];
+
+console.log(numbers.reduce(val => { { return val += val } }));
+
+//  Q14
+const numbers = [2, 3, 4];
+console.log(numbers.reduce((a,val) => { { return a*val } }));
 
 
-// const marks = [80, 90, 45, 60, 100]; 
-
-// let passStudents = marks.every(val=>{return val>50})
-//console.log(passStudents) // The output will be false becasuse one student mark is below than 50 and every check that every element of array meet should meet the given statment
-
-
-// const marks = [30, 40, 90, 20];
-//  let passStudents = marks.some(val=>{return val>50})
-// console.log(passStudents) Its the oppossite of every() method;
-
-// const users = [
-//   { name: "Ali", age: 20 },
-//   { name: "Ahmed", age: 17 },
-//   { name: "Sara", age: 25 }
-// ];
+// Q15
+const cart = [
+    { name: "Phone", price: 50000 },
+    { name: "Laptop", price: 120000 },
+    { name: "Mouse", price: 2000 }
+];
 
 
-// let abc= users.filter(obj =>{
-//     return obj.age>18
-// });
+let abc = cart.map(val => {
+    return val.price
+})
 
-// console.log(abc)
+let def = abc.reduce((a, val) => { 
+    return val += a
+ })
 
-// let abc = users.map(val=>{
+console.log(def);
+
+
+// Q16
+const fruits = ["Apple", "Banana", "Orange"];
+
+
+console.log(fruits.includes("Banana"))
+
+//  Q17
+console.log(fruits.includes("Mango"))
+
+
+//  Q18
+const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+let evenNums = numbers.filter(a => {
+    return a % 2 === 0;
+})
+
+console.log(evenNums.map(num => { return num * num }));
+
+
+//  Q19
+const students = [
+    { name: "Ali", marks: 80 },
+    { name: "Ahmed", marks: 45 },
+    { name: "Sara", marks: 95 },
+    { name: "Bilal", marks: 60 }
+];
+
+
+const passedStudents = students.filter(a => {
+    return a.marks > 50;
+})
+
+console.log(passedStudents)
+
+
+//  Q20
+
+// console.log(passedStudents.map(val=>{
 //     return val.name
-// });
+// }))
 
-
-// const numbers = [10, 18, 15, 20, 25];
-
-// console.log(numbers.find(val => { return val > 18 }))
-
-
-
-// const users = [
-//   { id: 1, name: "Ali" },
-//   { id: 2, name: "Ahmed" },
-//   { id: 3, name: "Sara" }
-// ];
-
-// let abc = users.find(val=>{
-//     return val.id === 2
-// })
-// console.log(abc)
-
-// const users = [
-//   { id: 1, name: "Ali" },
-//   { id: 2, name: "Ahmed" },
-//   { id: 3, name: "Sara" }
-// ];
-
-// let a = users.findIndex(val=>{
-//     return val.name === "Sara"
-// });
-
-
-// const numbers = [10, 20, 30, 40];
-
-// console.log(numbers.reduce(val => { { return val += val } }));
-
-// const numbers = [2, 3, 4];
-// console.log(numbers.reduce((a,val) => { { return a*val } }));
-
-
-// const cart = [
-//     { name: "Phone", price: 50000 },
-//     { name: "Laptop", price: 120000 },
-//     { name: "Mouse", price: 2000 }
-// ];
-
-
-// let abc = cart.map(val => {
-//     return val.price
-// })
-
-// let def = abc.reduce((a, val) => { 
-//     return val += a
-//  })
-
-// console.log(def)
+*/
