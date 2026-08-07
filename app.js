@@ -586,3 +586,10 @@ console.log(account.transactionHistory());
 // let newArr = arr.map(function(val){
 //     return val*val
 // });
+
+
+// let arr = [2,3,6];
+
+// let newArr = arr.map(val=>{
+//     return val + (val *18/100)
+// })
