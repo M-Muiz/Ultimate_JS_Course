@@ -594,7 +594,7 @@ console.log(account.transactionHistory());
 //     return val + (val *18/100)
 // });
 
-let fruits = ["mango", "apple","banana"];
+// let fruits = ["mango", "apple","banana"];
 
 // fruits.forEach(val=>{
 //     console.log(val)
@@ -603,4 +603,11 @@ let fruits = ["mango", "apple","banana"];
 
 // let newArr = fruits.map((val)=>{
 //     return val.toUpperCase()
-// });
+// });                                         
+
+
+// let arr = [2, 4, 5, 7, 8, 10, 12, 20];
+// let newArr = arr.filter(val => {return val > 15})
+
+
+let arr = [2, 4, 5, 7, 8, 10, 12, 20];
