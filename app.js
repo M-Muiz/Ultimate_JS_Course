@@ -745,19 +745,45 @@ console.log(passedStudents)
 //     return val.name
 // }))
 
+
+const products = [
+    { name: "Phone", price: 50000, inStock: true },
+    { name: "Laptop", price: 120000, inStock: false },
+    { name: "Mouse", price: 1500, inStock: true },
+    { name: "Keyboard", price: 2500, inStock: true }
+];
+
+const stock = products.filter(a=>{
+    return a.inStock;
+}).map(product=>{
+    return product.name
+}).sort();
+
+console.log(stock)
+
+
+
+const employees = [
+    { name: "Ali", salary: 50000, department: "IT" },
+    { name: "Sara", salary: 70000, department: "HR" },
+    { name: "Ahmed", salary: 60000, department: "IT" },
+    { name: "Bilal", salary: 45000, department: "Finance" },
+    { name: "Ayesha", salary: 90000, department: "IT" }
+];
+
+
+const it = employees.filter(a => {
+    return a.department === "IT"
+})
+const it_names = it.map(name => {
+    return name.name
+})
+const it_salary = it.reduce((a,b)=>{
+    return a + b.salary
+},0)
+console.log(it)
+console.log(it_names)
+console.log(it_salary)
+
+
 */
-
-// const products = [
-//   { name: "Phone", price: 50000, inStock: true },
-//   { name: "Laptop", price: 120000, inStock: false },
-//   { name: "Mouse", price: 1500, inStock: true },
-//   { name: "Keyboard", price: 2500, inStock: true }
-// ];
-
-// const stock = products.filter(a=>{
-//     return a.inStock;
-// }).map(product=>{
-//     return product.name
-// }).sort();
-
-// console.log(stock)
