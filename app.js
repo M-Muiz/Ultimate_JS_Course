@@ -1019,11 +1019,12 @@ const products = [
 
 const text = document.getElementById("text");
 const dropdown = document.getElementById("myDropdown");
-let listContainer = document.getElementById("something");
+const container = document.getElementById("productContainer");
 
 function getProductYouWant() {
-    const name = text.value.toLowerCase();
-    const category = dropdown.value;
+    container.innerHTML= "";
+    let name = text.value.toLowerCase();
+    let category = dropdown.value;
 
     let result = products.map(a => {
         return a;
@@ -1039,11 +1040,30 @@ function getProductYouWant() {
         }
     });
 
-    result.forEach(element => {
-        console.log(element)
-        // let li = document.createElement("li");
-        // li.textContent = element
-        // listContainer.appendChild(li)
+    result.forEach(product => {
+         container.innerHTML += `
+        <div class="product-card">
+            <div class="product-brand">${product.brand}</div>
+
+            <h2>${product.name}</h2>
+
+            <span class="product-category">
+                ${product.category}
+            </span>
+
+            <div class="product-price">
+                Rs. ${product.price.toLocaleString()}
+            </div>
+
+            <div class="product-rating">
+                ⭐ ${product.rating}
+            </div>
+
+            <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
+                ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
+            </div>
+        </div>
+    `;
     })
 
     console.log("Result", result)
