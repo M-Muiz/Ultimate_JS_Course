@@ -1029,20 +1029,27 @@ text.addEventListener("change", (e) => {
     // }).filter(a => {
     //     return a.includes(val);
     // });
-    
-    let result = prdo
+
+    let result = products.map(a => {
+        return a;
+    }).filter(b => {
+        console.log(b.category)
+        return b.category === "Mobile"
+    })
     console.log(result)
-    if (result.length > 0) {
-        result.forEach(e => {
-            let li = document.createElement("li");
-            li.textContent = e
-            listContainer.appendChild(li)
-        })
-        e.target.value = "";
-    } else {
-        let li = document.createElement("li");
-        li.textContent = "Not Found!"
-        listContainer.appendChild(li)
-        e.target.value = "";
-    }
+    // if (result.length > 0) {
+    //     result.forEach(e => {
+    //         let li = document.createElement("li");
+    //         li.textContent = e
+    //         listContainer.appendChild(li)
+    //     })
+    //     e.target.value = "";
+    // } else {
+    //     let li = document.createElement("li");
+    //     li.textContent = "Not Found!"
+    //     listContainer.appendChild(li)
+    //     e.target.value = "";
+    // }
 });
+
+
