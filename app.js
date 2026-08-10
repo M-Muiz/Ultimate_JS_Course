@@ -1017,12 +1017,22 @@ const products = [
 //         inStock: true
 //     },
 
-let text = document.getElementById("text");
+const text = document.getElementById("text");
+const dropdown = document.getElementById("myDropdown");
 let listContainer = document.getElementById("something");
 
-text.addEventListener("change", (e) => {
-    let val = e.target.value.toLowerCase();
-    listContainer.innerHTML = "";
+function getProductYouWant() {
+    const name = text.value;
+    const category = dropdown.value;
+
+    console.log("Name:", name);
+    console.log("Category:", category);
+}
+
+text.addEventListener("change", getProductYouWant);
+dropdown.addEventListener("change", getProductYouWant);
+    // let val = e.target.value.toLowerCase();
+    // listContainer.innerHTML = "";
 
     // let result = products.map(v => {
     //     return v.name.toLowerCase();
@@ -1030,13 +1040,40 @@ text.addEventListener("change", (e) => {
     //     return a.includes(val);
     // });
 
-    let result = products.map(a => {
-        return a;
-    }).filter(b => {
-        console.log(b.category)
-        return b.category === "Mobile"
-    })
-    console.log(result)
+    // let result = products.map(a => {
+    //     return a;
+    // }).filter(b => {
+    //     console.log(b.category)
+    //     return b.category === "Mobile"
+    // })
+    // console.log(result)
+// });
+
+
+    // let result = products.map(v => {
+    //     return v.name.toLowerCase();
+    // }).filter(a => {
+    //     return a.includes(val);
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // if (result.length > 0) {
     //     result.forEach(e => {
     //         let li = document.createElement("li");
@@ -1050,6 +1087,4 @@ text.addEventListener("change", (e) => {
     //     listContainer.appendChild(li)
     //     e.target.value = "";
     // }
-});
-
-
+}
