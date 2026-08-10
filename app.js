@@ -1021,7 +1021,7 @@ const products = [
 const text = document.getElementById("text");
 const dropdown = document.getElementById("myDropdown");
 const container = document.getElementById("productContainer");
-let isStock = true;
+let isStock = false;
 let stockButton = document.getElementById("stock").addEventListener("click", function () {
   isStock = !isStock;
 });
@@ -1043,37 +1043,37 @@ function getProductYouWant() {
         }
     });
 
-    // !isStock ? result.filter(p=>{
-    //     return p.isStock === true
-    // }) : result;
+    !isStock ? result.filter(p=>{
+        return p.isStock === true
+    }) : result;
 
-    // result.forEach(product => {
-    //      container.innerHTML += `
-    //     <div class="product-card">
-    //         <div class="product-brand">${product.brand}</div>
+    result.forEach(product => {
+         container.innerHTML += `
+        <div class="product-card">
+            <div class="product-brand">${product.brand}</div>
 
-    //         <h2>${product.name}</h2>
+            <h2>${product.name}</h2>
 
-    //         <span class="product-category">
-    //             ${product.category}
-    //         </span>
+            <span class="product-category">
+                ${product.category}
+            </span>
 
-    //         <div class="product-price">
-    //             Rs. ${product.price.toLocaleString()}
-    //         </div>
+            <div class="product-price">
+                Rs. ${product.price.toLocaleString()}
+            </div>
 
-    //         <div class="product-rating">
-    //             ⭐ ${product.rating}
-    //         </div>
+            <div class="product-rating">
+                ⭐ ${product.rating}
+            </div>
 
-    //         <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
-    //             ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
-    //         </div>
-    //     </div>
-    // `;
-    // })
+            <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
+                ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
+            </div>
+        </div>
+    `;
+    })
 
-    // console.log("Result", result)
+    console.log("Result", result)
 
     console.log("Name:", name);
     console.log("Category:", category);
