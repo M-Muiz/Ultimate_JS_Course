@@ -796,3 +796,8 @@ const students = [
   { name: "Ayesha", marks: 100 }
 ];
 
+const studenMarks = students.map(names=>{
+    return names.marks;
+})
+
+console.log(studenMarks)
