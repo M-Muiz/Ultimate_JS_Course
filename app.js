@@ -1017,18 +1017,18 @@ const products = [
 //         inStock: true
 //     },
 
+
+
 const text = document.getElementById("text");
 const dropdown = document.getElementById("myDropdown");
 const container = document.getElementById("productContainer");
-
+let isStock = true;
 function getProductYouWant() {
     container.innerHTML= "";
     let name = text.value.toLowerCase();
     let category = dropdown.value;
 
-    let result = products.map(a => {
-        return a;
-    }).filter(b => {
+    let result = products.filter(b => {
         if (!category && !name) {
             return b;
         } else if (!name && category) {
