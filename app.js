@@ -1022,8 +1022,31 @@ const dropdown = document.getElementById("myDropdown");
 let listContainer = document.getElementById("something");
 
 function getProductYouWant() {
-    const name = text.value;
+    const name = text.value.toLowerCase();
     const category = dropdown.value;
+
+    let result = products.map(a => {
+        return a;
+    }).filter(b => {
+        if (!category && !name) {
+            return b;
+        } else if (!name && category) {
+            return b.category.includes(category);
+        } else if (name && !category) {
+            return b.name.toLocaleLowerCase().includes(name);
+        } else {
+            return b.name.toLocaleLowerCase().includes(name) && b.category.includes(category)
+        }
+    });
+
+    result.forEach(element => {
+        console.log(element)
+        // let li = document.createElement("li");
+        // li.textContent = element
+        // listContainer.appendChild(li)
+    })
+
+    console.log("Result", result)
 
     console.log("Name:", name);
     console.log("Category:", category);
@@ -1031,30 +1054,25 @@ function getProductYouWant() {
 
 text.addEventListener("change", getProductYouWant);
 dropdown.addEventListener("change", getProductYouWant);
-    // let val = e.target.value.toLowerCase();
-    // listContainer.innerHTML = "";
+// let val = e.target.value.toLowerCase();
+// listContainer.innerHTML = "";
 
-    // let result = products.map(v => {
-    //     return v.name.toLowerCase();
-    // }).filter(a => {
-    //     return a.includes(val);
-    // });
 
-    // let result = products.map(a => {
-    //     return a;
-    // }).filter(b => {
-    //     console.log(b.category)
-    //     return b.category === "Mobile"
-    // })
-    // console.log(result)
+// let result = products.map(a => {
+//     return a;
+// }).filter(b => {
+//     console.log(b.category)
+//     return b.category === "Mobile"
+// })
+// console.log(result)
 // });
 
 
-    // let result = products.map(v => {
-    //     return v.name.toLowerCase();
-    // }).filter(a => {
-    //     return a.includes(val);
-    // });
+// let result = products.map(v => {
+//     return v.name.toLowerCase();
+// }).filter(a => {
+//     return a.includes(val);
+// });
 
 
 
@@ -1074,17 +1092,16 @@ dropdown.addEventListener("change", getProductYouWant);
 
 
 
-    // if (result.length > 0) {
-    //     result.forEach(e => {
-    //         let li = document.createElement("li");
-    //         li.textContent = e
-    //         listContainer.appendChild(li)
-    //     })
-    //     e.target.value = "";
-    // } else {
-    //     let li = document.createElement("li");
-    //     li.textContent = "Not Found!"
-    //     listContainer.appendChild(li)
-    //     e.target.value = "";
-    // }
-}
+// if (result.length > 0) {
+//     result.forEach(e => {
+//         let li = document.createElement("li");
+//         li.textContent = e
+//         listContainer.appendChild(li)
+//     })
+//     e.target.value = "";
+// } else {
+//     let li = document.createElement("li");
+//     li.textContent = "Not Found!"
+//     listContainer.appendChild(li)
+//     e.target.value = "";
+// }
