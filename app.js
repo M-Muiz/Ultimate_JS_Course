@@ -789,15 +789,27 @@ console.log(it_salary)
 */
 
 const students = [
-  { name: "Ali", marks: 80 },
-  { name: "Ahmed", marks: 45 },
-  { name: "Sara", marks: 95 },
-  { name: "Bilal", marks: 60 },
-  { name: "Ayesha", marks: 100 }
+    { name: "Ali", marks: 80 },
+    { name: "Ahmed", marks: 45 },
+    { name: "Sara", marks: 95 },
+    { name: "Bilal", marks: 60 },
+    { name: "Ayesha", marks: 100 }
 ];
 
-const studenMarks = students.map(names=>{
-    return names.marks;
+let text = document.getElementById("text");
+
+text.addEventListener("change", (e) => {
+    let val = e.target.value;
+
+    let result = students.map(v => {
+        return v.name;
+    }).filter(a => {
+        return a.includes(val)
+    })
+    console.log(result)
 })
 
-console.log(studenMarks)
+
+// return students.map(a=>{
+//     a.name;
+// })
