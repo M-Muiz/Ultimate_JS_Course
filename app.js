@@ -797,16 +797,30 @@ const students = [
 ];
 
 let text = document.getElementById("text");
+let listContainer = document.getElementById("something");
 
 text.addEventListener("change", (e) => {
-    let val = e.target.value;
+    let val = e.target.value.toLowerCase();
+    listContainer.innerHTML = "";
 
     let result = students.map(v => {
-        return v.name;
+        return v.name.toLowerCase();
     }).filter(a => {
-        return a.includes(val)
-    })
-    console.log(result)
+        return a.includes(val);
+    });
+    if (result.length > 0) {
+        result.forEach(e => {
+            let li = document.createElement("li");
+            li.textContent = e
+            listContainer.appendChild(li)
+        })
+        e.target.value = "";
+    } else {
+        let li = document.createElement("li");
+        li.textContent = "Not Found!"
+        listContainer.appendChild(li)
+        e.target.value = "";
+    }
 })
 
 
