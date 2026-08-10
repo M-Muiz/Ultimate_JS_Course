@@ -788,13 +788,234 @@ console.log(it_salary)
 
 */
 
-const students = [
-    { name: "Ali", marks: 80 },
-    { name: "Ahmed", marks: 45 },
-    { name: "Sara", marks: 95 },
-    { name: "Bilal", marks: 60 },
-    { name: "Ayesha", marks: 100 }
+// const students = [
+//     { name: "Ali", marks: 80 },
+//     { name: "Ahmed", marks: 45 },
+//     { name: "Sara", marks: 95 },
+//     { name: "Bilal", marks: 60 },
+//     { name: "Ayesha", marks: 100 }
+// ];
+
+// let text = document.getElementById("text");
+// let listContainer = document.getElementById("something");
+
+// text.addEventListener("change", (e) => {
+//     let val = e.target.value.toLowerCase();
+//     listContainer.innerHTML = "";
+
+//     let result = students.map(v => {
+//         return v.name.toLowerCase();
+//     }).filter(a => {
+//         return a.includes(val);
+//     });
+//     if (result.length > 0) {
+//         result.forEach(e => {
+//             let li = document.createElement("li");
+//             li.textContent = e
+//             listContainer.appendChild(li)
+//         })
+//         e.target.value = "";
+//     } else {
+//         let li = document.createElement("li");
+//         li.textContent = "Not Found!"
+//         listContainer.appendChild(li)
+//         e.target.value = "";
+//     }
+// });
+
+
+const products = [
+    {
+        id: 1,
+        name: "iPhone 15",
+        category: "Mobile",
+        brand: "Apple",
+        price: 150000,
+        rating: 4.8,
+        inStock: true
+    },
+    {
+        id: 2,
+        name: "Galaxy S24",
+        category: "Mobile",
+        brand: "Samsung",
+        price: 180000,
+        rating: 4.7,
+        inStock: true
+    },
+    {
+        id: 3,
+        name: "Redmi Note 13",
+        category: "Mobile",
+        brand: "Xiaomi",
+        price: 55000,
+        rating: 4.4,
+        inStock: true
+    },
+    {
+        id: 4,
+        name: "OnePlus 12",
+        category: "Mobile",
+        brand: "OnePlus",
+        price: 145000,
+        rating: 4.6,
+        inStock: false
+    },
+    {
+        id: 5,
+        name: "MacBook Air M2",
+        category: "Laptop",
+        brand: "Apple",
+        price: 250000,
+        rating: 4.9,
+        inStock: true
+    },
+    {
+        id: 6,
+        name: "Dell Inspiron 15",
+        category: "Laptop",
+        brand: "Dell",
+        price: 145000,
+        rating: 4.3,
+        inStock: true
+    },
+    {
+        id: 7,
+        name: "HP Pavilion 14",
+        category: "Laptop",
+        brand: "HP",
+        price: 135000,
+        rating: 4.5,
+        inStock: true
+    },
+    {
+        id: 8,
+        name: "Lenovo ThinkPad E14",
+        category: "Laptop",
+        brand: "Lenovo",
+        price: 160000,
+        rating: 4.6,
+        inStock: false
+    },
+    {
+        id: 9,
+        name: "Nike Air Max",
+        category: "Shoes",
+        brand: "Nike",
+        price: 25000,
+        rating: 4.7,
+        inStock: true
+    },
+    {
+        id: 10,
+        name: "Adidas Ultraboost",
+        category: "Shoes",
+        brand: "Adidas",
+        price: 30000,
+        rating: 4.8,
+        inStock: true
+    },
+    {
+        id: 11,
+        name: "Puma Running Shoes",
+        category: "Shoes",
+        brand: "Puma",
+        price: 18000,
+        rating: 4.2,
+        inStock: true
+    },
+    {
+        id: 12,
+        name: "Nike Revolution 6",
+        category: "Shoes",
+        brand: "Nike",
+        price: 15000,
+        rating: 4.4,
+        inStock: false
+    },
+    {
+        id: 13,
+        name: "Sony WH-1000XM5",
+        category: "Headphones",
+        brand: "Sony",
+        price: 85000,
+        rating: 4.9,
+        inStock: true
+    },
+    {
+        id: 14,
+        name: "AirPods Pro 2",
+        category: "Headphones",
+        brand: "Apple",
+        price: 65000,
+        rating: 4.8,
+        inStock: true
+    },
+    {
+        id: 15,
+        name: "Galaxy Buds 2 Pro",
+        category: "Headphones",
+        brand: "Samsung",
+        price: 45000,
+        rating: 4.6,
+        inStock: true
+    },
+    {
+        id: 16,
+        name: "JBL Tune 760NC",
+        category: "Headphones",
+        brand: "JBL",
+        price: 22000,
+        rating: 4.3,
+        inStock: false
+    },
+    {
+        id: 17,
+        name: "Apple Watch Series 9",
+        category: "Smart Watch",
+        brand: "Apple",
+        price: 95000,
+        rating: 4.8,
+        inStock: true
+    },
+    {
+        id: 18,
+        name: "Galaxy Watch 6",
+        category: "Smart Watch",
+        brand: "Samsung",
+        price: 75000,
+        rating: 4.6,
+        inStock: true
+    },
+    {
+        id: 19,
+        name: "Mi Band 8",
+        category: "Smart Watch",
+        brand: "Xiaomi",
+        price: 12000,
+        rating: 4.4,
+        inStock: true
+    },
+    {
+        id: 20,
+        name: "Casio G-Shock",
+        category: "Watch",
+        brand: "Casio",
+        price: 35000,
+        rating: 4.7,
+        inStock: true
+    }
 ];
+
+//  {
+//         id: 1,
+//         name: "iPhone 15",
+//         category: "Mobile",
+//         brand: "Apple",
+//         price: 150000,
+//         rating: 4.8,
+//         inStock: true
+//     },
 
 let text = document.getElementById("text");
 let listContainer = document.getElementById("something");
@@ -803,11 +1024,14 @@ text.addEventListener("change", (e) => {
     let val = e.target.value.toLowerCase();
     listContainer.innerHTML = "";
 
-    let result = students.map(v => {
-        return v.name.toLowerCase();
-    }).filter(a => {
-        return a.includes(val);
-    });
+    // let result = products.map(v => {
+    //     return v.name.toLowerCase();
+    // }).filter(a => {
+    //     return a.includes(val);
+    // });
+    
+    let result = prdo
+    console.log(result)
     if (result.length > 0) {
         result.forEach(e => {
             let li = document.createElement("li");
@@ -821,9 +1045,4 @@ text.addEventListener("change", (e) => {
         listContainer.appendChild(li)
         e.target.value = "";
     }
-})
-
-
-// return students.map(a=>{
-//     a.name;
-// })
+});
