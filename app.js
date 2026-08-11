@@ -1043,9 +1043,9 @@ function getProductYouWant() {
         }
     });
 
-    !isStock ? result.filter(p=>{
+    !isStock ?result : result.filter(p=>{
         return p.isStock === true
-    }) : result;
+    });
 
     result.forEach(product => {
          container.innerHTML += `
