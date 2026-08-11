@@ -1155,7 +1155,6 @@ let data= {
 let {lan,lat} = data.info.location;
 
 
-*/
 
 
 let info = {
@@ -1167,3 +1166,18 @@ let info = {
 for(let key in info){
     console.log(key, info[key])
 }
+
+*/
+
+let obj = {
+    name: "John",
+    age: 34,
+    city: "karachi"
+}
+
+let obj2 = {...obj}
+console.log(obj2)
+
+let obj3 = Object.assign({}, obj)
+console.log(obj3)
+
