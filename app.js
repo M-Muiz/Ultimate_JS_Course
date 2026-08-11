@@ -1200,10 +1200,20 @@ let obj2 = JSON.parse(JSON.stringify(obj));
 
 obj2.info.city = "Sindh"
 
-*/
 
 const user = {
     "first-name": "john"
 }
 
 let {"first-name": newVariable} = user
+*/
+
+let obj = {
+    name: "John",
+    age: 34,
+    city: "karachi"
+}
+
+Object.entries(obj).forEach(v=>{
+    console.log(v[0], ": ", v[1])
+})
