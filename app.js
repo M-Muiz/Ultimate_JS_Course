@@ -1129,16 +1129,26 @@ Change vs code font and colour theme
 // Starting Objects
 
 
-let obj = {
-    name: "khan",
-    age: 25,
-    food: ["Biryani", "Karahi"]
-};
+// let obj = {
+//     name: "khan",
+//     age: 25,
+//     food: ["Biryani", "Karahi"]
+// };
 
-console.log(obj.food)
+// console.log(obj.food)
 
-let aa = "name"
+// let aa = "name"
 
-console.log(obj[aa])
+// console.log(obj[aa])
 
 
+let data= {
+    name:"simran",
+    info:{
+        pin: 334,
+        location:{
+            lat: 24.5,
+            lan: 12.5
+        }
+    }
+}
