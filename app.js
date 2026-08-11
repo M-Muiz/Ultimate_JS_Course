@@ -1018,69 +1018,67 @@ const products = [
 //     },
 
 
-const text = document.getElementById("text");
-const dropdown = document.getElementById("myDropdown");
-const container = document.getElementById("productContainer");
-let isStock = false;
-let stockButton = document.getElementById("stock").addEventListener("click", function () {
-  isStock = !isStock;
-});
+// const text = document.getElementById("text");
+// const dropdown = document.getElementById("myDropdown");
+// const container = document.getElementById("productContainer");
+// let isStock = false;
+// let stockButton = document.getElementById("stock").addEventListener("click", function () {
+//   isStock = !isStock;
+//   console.log(isStock)
+// });
 
-function getProductYouWant() {
-    container.innerHTML= "";
-    let name = text.value.toLowerCase();
-    let category = dropdown.value;
+// function getProductYouWant() {
+//     container.innerHTML= "";
+//     let name = text.value.toLowerCase();
+//     let category = dropdown.value;
 
-    let result = products.filter(b => {
-        if (!category && !name) {
-            return b;
-        } else if (!name && category) {
-            return b.category.includes(category);
-        } else if (name && !category) {
-            return b.name.toLocaleLowerCase().includes(name);
-        } else {
-            return b.name.toLocaleLowerCase().includes(name) && b.category.includes(category)
-        }
-    });
+//     let result = products.filter(b => {
+//         if (!category && !name) {
+//             return b;
+//         } else if (!name && category) {
+//             return b.category.includes(category);
+//         } else if (name && !category) {
+//             return b.name.toLocaleLowerCase().includes(name);
+//         } else {
+//             return b.name.toLocaleLowerCase().includes(name) && b.category.includes(category)
+//         }
+//     });
 
-    !isStock ?result : result.filter(p=>{
-        return p.isStock === true
-    });
 
-    result.forEach(product => {
-         container.innerHTML += `
-        <div class="product-card">
-            <div class="product-brand">${product.brand}</div>
+//     result.forEach(product => {
+//          container.innerHTML += `
+//         <div class="product-card">
+//             <div class="product-brand">${product.brand}</div>
 
-            <h2>${product.name}</h2>
+//             <h2>${product.name}</h2>
 
-            <span class="product-category">
-                ${product.category}
-            </span>
+//             <span class="product-category">
+//                 ${product.category}
+//             </span>
 
-            <div class="product-price">
-                Rs. ${product.price.toLocaleString()}
-            </div>
+//             <div class="product-price">
+//                 Rs. ${product.price.toLocaleString()}
+//             </div>
 
-            <div class="product-rating">
-                ⭐ ${product.rating}
-            </div>
+//             <div class="product-rating">
+//                 ⭐ ${product.rating}
+//             </div>
 
-            <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
-                ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
-            </div>
-        </div>
-    `;
-    })
+//             <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
+//                 ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
+//             </div>
+//         </div>
+//     `;
+//     })
 
-    console.log("Result", result)
+//     console.log("Result", result)
 
-    console.log("Name:", name);
-    console.log("Category:", category);
-}
+//     console.log("Name:", name);
+//     console.log("Category:", category);
+// }
 
-text.addEventListener("change", getProductYouWant);
-dropdown.addEventListener("change", getProductYouWant);
+// text.addEventListener("change", getProductYouWant);
+// dropdown.addEventListener("change", getProductYouWant);
 // let val = e.target.value.toLowerCase();
 // listContainer.innerHTML = "";
 
