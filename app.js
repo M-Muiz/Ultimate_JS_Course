@@ -1132,9 +1132,11 @@ Change vs code font and colour theme
 let obj = {
     name: "khan",
     age: 25,
-    food: [Biryani, Karahi]
+    food: ["Biryani", "Karahi"]
 };
 
-console.log(obj)
+console.log(obj.food)
+
+
 
 
