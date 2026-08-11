@@ -1192,5 +1192,11 @@ let obj = {
 };
 
 
-let obj2 = {...obj}
+// let obj2 = {...obj}
+// obj2.info.city = "Sindh"
+
+// Deep Clone
+
+let obj2 = JSON.parse(JSON.stringify(obj));
+
 obj2.info.city = "Sindh"
