@@ -1167,19 +1167,18 @@ for(let key in info){
     console.log(key, info[key])
 }
 
-*/
 
-// let obj = {
-//     name: "John",
-//     age: 34,
-//     city: "karachi"
-// }
+let obj = {
+    name: "John",
+    age: 34,
+    city: "karachi"
+}
 
-// let obj2 = {...obj}
-// console.log(obj2)
+let obj2 = {...obj}
+console.log(obj2)
 
-// let obj3 = Object.assign({}, obj)
-// console.log(obj3)
+let obj3 = Object.assign({}, obj)
+console.log(obj3)
 
 
 let obj = {
@@ -1192,11 +1191,19 @@ let obj = {
 };
 
 
-// let obj2 = {...obj}
-// obj2.info.city = "Sindh"
+let obj2 = {...obj}
+obj2.info.city = "Sindh"
 
-// Deep Clone
+Deep Clone
 
 let obj2 = JSON.parse(JSON.stringify(obj));
 
 obj2.info.city = "Sindh"
+
+*/
+
+const user = {
+    "first-name": "john"
+}
+
+let {"first-name": newVariable} = user
