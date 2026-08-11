@@ -1206,7 +1206,6 @@ const user = {
 }
 
 let {"first-name": newVariable} = user
-*/
 
 let obj = {
     name: "John",
@@ -1217,3 +1216,7 @@ let obj = {
 Object.entries(obj).forEach(v=>{
     console.log(v[0], ": ", v[1])
 })
+*/
+
+const person = {};
+console.log(person?.profile?.name)
