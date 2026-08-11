@@ -1137,6 +1137,8 @@ let obj = {
 
 console.log(obj.food)
 
+let aa = "name"
 
+console.log(obj[aa])
 
 
