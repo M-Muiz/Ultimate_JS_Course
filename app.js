@@ -1152,3 +1152,6 @@ let data= {
         }
     }
 }
+
+let {lan,lat} = data.info.location;
+
