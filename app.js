@@ -1129,4 +1129,12 @@ Change vs code font and colour theme
 // Starting Objects
 
 
+let obj = {
+    name: "khan",
+    age: 25,
+    food: [Biryani, Karahi]
+};
+
+console.log(obj)
+
 
