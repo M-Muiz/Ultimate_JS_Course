@@ -1007,78 +1007,68 @@ const products = [
     }
 ];
 
-//  {
-//         id: 1,
-//         name: "iPhone 15",
-//         category: "Mobile",
-//         brand: "Apple",
-//         price: 150000,
-//         rating: 4.8,
-//         inStock: true
-//     },
+
+const text = document.getElementById("text");
+const dropdown = document.getElementById("myDropdown");
+const container = document.getElementById("productContainer");
+let isStock = false;
+let stockButton = document.getElementById("stock").addEventListener("click", function () {
+  isStock = !isStock;
+  console.log(isStock)
+});
+
+function getProductYouWant() {
+    container.innerHTML= "";
+    let name = text.value.toLowerCase();
+    let category = dropdown.value;
+
+    let result = products.filter(b => {
+        if (!category && !name) {
+            return b;
+        } else if (!name && category) {
+            return b.category.includes(category);
+        } else if (name && !category) {
+            return b.name.toLocaleLowerCase().includes(name);
+        } else {
+            return b.name.toLocaleLowerCase().includes(name) && b.category.includes(category)
+        }
+    });
 
 
-// const text = document.getElementById("text");
-// const dropdown = document.getElementById("myDropdown");
-// const container = document.getElementById("productContainer");
-// let isStock = false;
-// let stockButton = document.getElementById("stock").addEventListener("click", function () {
-//   isStock = !isStock;
-//   console.log(isStock)
-// });
+    result.forEach(product => {
+         container.innerHTML += `
+        <div class="product-card">
+            <div class="product-brand">${product.brand}</div>
 
-// function getProductYouWant() {
-//     container.innerHTML= "";
-//     let name = text.value.toLowerCase();
-//     let category = dropdown.value;
+            <h2>${product.name}</h2>
 
-//     let result = products.filter(b => {
-//         if (!category && !name) {
-//             return b;
-//         } else if (!name && category) {
-//             return b.category.includes(category);
-//         } else if (name && !category) {
-//             return b.name.toLocaleLowerCase().includes(name);
-//         } else {
-//             return b.name.toLocaleLowerCase().includes(name) && b.category.includes(category)
-//         }
-//     });
+            <span class="product-category">
+                ${product.category}
+            </span>
 
+            <div class="product-price">
+                Rs. ${product.price.toLocaleString()}
+            </div>
 
-//     result.forEach(product => {
-//          container.innerHTML += `
-//         <div class="product-card">
-//             <div class="product-brand">${product.brand}</div>
+            <div class="product-rating">
+                ⭐ ${product.rating}
+            </div>
 
-//             <h2>${product.name}</h2>
+            <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
+                ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
+            </div>
+        </div>
+    `;
+    })
 
-//             <span class="product-category">
-//                 ${product.category}
-//             </span>
+    console.log("Result", result)
 
-//             <div class="product-price">
-//                 Rs. ${product.price.toLocaleString()}
-//             </div>
+    console.log("Name:", name);
+    console.log("Category:", category);
+}
 
-//             <div class="product-rating">
-//                 ⭐ ${product.rating}
-//             </div>
-
-//             <div class="stock ${product.inStock ? "in-stock" : "out-stock"}">
-//                 ${product.inStock ? "✓ In Stock" : "✕ Out of Stock"}
-//             </div>
-//         </div>
-//     `;
-//     })
-
-//     console.log("Result", result)
-
-//     console.log("Name:", name);
-//     console.log("Category:", category);
-// }
-
-// text.addEventListener("change", getProductYouWant);
-// dropdown.addEventListener("change", getProductYouWant);
+text.addEventListener("change", getProductYouWant);
+dropdown.addEventListener("change", getProductYouWant);
 // let val = e.target.value.toLowerCase();
 // listContainer.innerHTML = "";
 
