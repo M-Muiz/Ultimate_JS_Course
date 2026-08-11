@@ -786,42 +786,42 @@ console.log(it_names)
 console.log(it_salary)
 
 
-*/
 
-// const students = [
-//     { name: "Ali", marks: 80 },
-//     { name: "Ahmed", marks: 45 },
-//     { name: "Sara", marks: 95 },
-//     { name: "Bilal", marks: 60 },
-//     { name: "Ayesha", marks: 100 }
-// ];
 
-// let text = document.getElementById("text");
-// let listContainer = document.getElementById("something");
+const students = [
+    { name: "Ali", marks: 80 },
+    { name: "Ahmed", marks: 45 },
+    { name: "Sara", marks: 95 },
+    { name: "Bilal", marks: 60 },
+    { name: "Ayesha", marks: 100 }
+];
 
-// text.addEventListener("change", (e) => {
-//     let val = e.target.value.toLowerCase();
-//     listContainer.innerHTML = "";
+let text = document.getElementById("text");
+let listContainer = document.getElementById("something");
 
-//     let result = students.map(v => {
-//         return v.name.toLowerCase();
-//     }).filter(a => {
-//         return a.includes(val);
-//     });
-//     if (result.length > 0) {
-//         result.forEach(e => {
-//             let li = document.createElement("li");
-//             li.textContent = e
-//             listContainer.appendChild(li)
-//         })
-//         e.target.value = "";
-//     } else {
-//         let li = document.createElement("li");
-//         li.textContent = "Not Found!"
-//         listContainer.appendChild(li)
-//         e.target.value = "";
-//     }
-// });
+text.addEventListener("change", (e) => {
+    let val = e.target.value.toLowerCase();
+    listContainer.innerHTML = "";
+
+    let result = students.map(v => {
+        return v.name.toLowerCase();
+    }).filter(a => {
+        return a.includes(val);
+    });
+    if (result.length > 0) {
+        result.forEach(e => {
+            let li = document.createElement("li");
+            li.textContent = e
+            listContainer.appendChild(li)
+        })
+        e.target.value = "";
+    } else {
+        let li = document.createElement("li");
+        li.textContent = "Not Found!"
+        listContainer.appendChild(li)
+        e.target.value = "";
+    }
+});
 
 
 const products = [
@@ -1120,3 +1120,6 @@ dropdown.addEventListener("change", getProductYouWant);
 //     listContainer.appendChild(li)
 //     e.target.value = "";
 // }
+
+
+*/
